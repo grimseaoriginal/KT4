@@ -1,0 +1,29 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KT4"
+      xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="KT4.LoginPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Grid>
+        <TextBlock x:Name="userType" HorizontalAlignment="Left" Margin="110,68,0,0" TextWrapping="Wrap" Text="Тип пользователя:" VerticalAlignment="Top" Height="29" Width="174" FontSize="20"/>
+        <TextBlock x:Name="loginTextBlock" HorizontalAlignment="Left" Margin="110,137,0,0" TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Top" Height="28" Width="80" FontSize="20"/>
+        <TextBlock x:Name="passTextBlock" HorizontalAlignment="Left" Margin="110,217,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top" Height="28" Width="80" FontSize="20"/>
+        <TextBlock x:Name="SecretWordTextBlock" HorizontalAlignment="Left" Margin="110,294,0,0" TextWrapping="Wrap" Text="Секретное слово:" VerticalAlignment="Top" Height="28" Width="174" FontSize="20"/>
+        <ComboBox x:Name="userTypeCombo" HorizontalAlignment="Left" Margin="306,68,0,0" VerticalAlignment="Top" Width="438" Height="29">
+            <ComboBoxItem Content="Администратор доступа"/>
+            <ComboBoxItem Content="Служба ИБ"/>
+            <ComboBoxItem Content="Руководитель ПОП"/>
+            <ComboBoxItem Content="Контролёр МО"/>
+        </ComboBox>
+        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="23" Margin="306,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Text="Введите логин"/>
+        <TextBox x:Name="passBox" HorizontalAlignment="Left" Height="23" Margin="306,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Text="Введите пароль"/>
+        <TextBox x:Name="SecretWordBox" HorizontalAlignment="Left" Height="23" Margin="306,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" Text="Введите секретное слово"/>
+        <Button x:Name="logInButton" Content="Войти в систему" HorizontalAlignment="Left" Margin="350,377,0,0" VerticalAlignment="Top" Width="155" Height="45" FontSize="16" Click="logInButton_Click"/>
+        <Button x:Name="closeButton" Content="Закрыть приложение" HorizontalAlignment="Left" Margin="544,377,0,0" VerticalAlignment="Top" Width="177" Height="45" FontSize="16" Click="closeButton_Click"/>
+    </Grid>
+</Page>

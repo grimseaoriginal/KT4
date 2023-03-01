@@ -1,0 +1,16 @@
+﻿<Window x:Name="mainWindowLogin" x:Class="KT4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KT4"
+        mc:Ignorable="d"
+        Title="Стражник" Height="598.5" Width="1023.5" Icon="Resources/appIcon.png" ResizeMode="NoResize">
+    <Grid>
+        <Frame x:Name="LoginFrame" Content="Frame" HorizontalAlignment="Left" Height="472" Margin="0,97,0,0" VerticalAlignment="Top" Width="1018" Initialized="LoginFrame_Initialized"/>
+        <Grid x:Name="UpperGrid" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Width="1018">
+            <Image HorizontalAlignment="Left" Height="61" Margin="374,20,0,0" VerticalAlignment="Top" Width="64" Source="Resources/appIcon.png"/>
+            <TextBlock x:Name="appNameBlock" HorizontalAlignment="Left" Margin="443,25,0,0" TextWrapping="Wrap" Text="&quot;Стражник&quot;" VerticalAlignment="Top" FontSize="36" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>
